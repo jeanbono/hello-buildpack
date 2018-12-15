@@ -1,0 +1,3 @@
+#!/bin/sh
+
+export PGSSLROOTCERT="$HOME/.postgresql/root.crt"
