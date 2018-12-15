@@ -1,4 +1,4 @@
 #!/bin/sh
 
 echo "setting env variables"
-export PGSSLROOTCERT="$HOME/.postgresql/root.crt"
+export PGSSLROOTCERT=$HOME/.postgresql/root.crt
