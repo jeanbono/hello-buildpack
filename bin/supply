@@ -21,6 +21,7 @@ DEPS_DIR=$3
 INDEX=$4
 
 echo "Applying Hello buildpack..."
+mkdir "$BUILD_DIR/.postgresql"
 echo "-----BEGIN CERTIFICATE-----
 MIIDdzCCAl+gAwIBAgIEAgAAuTANBgkqhkiG9w0BAQUFADBaMQswCQYDVQQGEwJJ
 RTESMBAGA1UEChMJQmFsdGltb3JlMRMwEQYDVQQLEwpDeWJlclRydXN0MSIwIAYD
