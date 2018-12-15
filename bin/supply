@@ -50,5 +50,4 @@ mkdir -p $DEPS_DIR/$INDEX
 echo "name: hello
 config:
   environment_variables:
-    PGSSLROOTCERT: $HOME/.postgresql/root.crt
-    TOTO: titi" > "$DEPS_DIR/$INDEX/config.yml"
+    PGSSLROOTCERT: $HOME/app/.postgresql/root.crt" > "$DEPS_DIR/$INDEX/config.yml"
