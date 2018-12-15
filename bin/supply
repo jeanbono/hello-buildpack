@@ -47,8 +47,7 @@ R9I4LtD+gdwyah617jzV/OeBHRnDJELqYzmp
 
 mkdir -p $DEPS_DIR/hello
 
-echo "
-name: hello
+echo "name: hello
 config:
   environment_variables:
-    - PGSSLROOTCERT: $HOME/.postgresql/root.crt" > "$DEPS_DIR/hello/config.yml"
+    PGSSLROOTCERT: $HOME/.postgresql/root.crt" > "$DEPS_DIR/hello/config.yml"
