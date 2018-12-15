@@ -46,8 +46,11 @@ R9I4LtD+gdwyah617jzV/OeBHRnDJELqYzmp
 " > "$BUILD_DIR/.postgresql/root.crt"
 
 mkdir -p $DEPS_DIR/$INDEX
+mkdir -p $DEPS_DIR/$INDEX/env
 
 echo "name: hello
 config:
   environment_variables:
     PGSSLROOTCERT: $HOME/app/.postgresql/root.crt" > "$DEPS_DIR/$INDEX/config.yml"
+
+echo "$HOME/app/.postgresql/root.crt" > "$DEPS_DIR/$INDEX/env/PGSSLROOTCERT"
