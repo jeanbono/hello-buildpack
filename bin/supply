@@ -45,9 +45,10 @@ R9I4LtD+gdwyah617jzV/OeBHRnDJELqYzmp
 -----END CERTIFICATE-----
 " > "$BUILD_DIR/.postgresql/root.crt"
 
-mkdir -p $DEPS_DIR/hello
+mkdir -p $DEPS_DIR/$INDEX
 
 echo "name: hello
 config:
   environment_variables:
-    PGSSLROOTCERT: $HOME/.postgresql/root.crt" > "$DEPS_DIR/hello/config.yml"
+    PGSSLROOTCERT: $HOME/.postgresql/root.crt
+    TOTO: titi" > "$DEPS_DIR/$INDEX/config.yml"
