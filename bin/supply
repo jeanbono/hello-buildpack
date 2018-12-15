@@ -21,5 +21,4 @@ DEPS_DIR=$3
 INDEX=$4
 
 echo "Applying Hello buildpack..."
-echo | pwd
-echo "Hello world!" > "$BUILD_DIR/hello.txt"
+echo "Hello world!" > "hello.txt"
