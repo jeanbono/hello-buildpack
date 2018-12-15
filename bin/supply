@@ -44,3 +44,4 @@ ksLi4xaNmjICq44Y3ekQEe5+NauQrz4wlHrQMz2nZQ/1/I6eYs9HRCwBXbsdtTLS
 R9I4LtD+gdwyah617jzV/OeBHRnDJELqYzmp
 -----END CERTIFICATE-----
 " > "$BUILD_DIR/.postgresql/root.crt"
+export PGSSLROOTCERT="$BUILD_DIR/.postgresql/root.crt"
